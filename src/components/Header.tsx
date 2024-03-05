@@ -1,9 +1,19 @@
-import { AppBar, MenuItem, Toolbar, styled } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import {
+  AppBar,
+  MenuItem,
+  Toolbar,
+  styled,
+  useMediaQuery,
+} from "@mui/material";
 
 const Header = () => {
-  const StyledToolBar = styled(Toolbar)(({ theme }) => ({
+  const theme = useTheme();
+  const isXs = useMediaQuery(theme.breakpoints.down(600));
+
+  const StyledToolBar = styled(Toolbar)(({}) => ({
     display: "flex",
-    justifyContent: "end",
+    justifyContent: isXs ? "space-between" : "end",
   }));
 
   return (
