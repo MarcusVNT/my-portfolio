@@ -60,13 +60,13 @@ const Hero = () => {
               spacing={3}
             >
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <Button>
+                <Button onClick={() => console.log("Download do Currículo.")}>
                   <DownloadIcon />
                   <Typography> Donwload CV</Typography>
                 </Button>
               </Grid>
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <Button>
+                <Button onClick={() => console.log("Abre o modal de contato.")}>
                   <EmailIcon />
                   <Typography>Contact Me</Typography>
                 </Button>

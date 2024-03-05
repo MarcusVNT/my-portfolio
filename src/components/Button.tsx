@@ -3,9 +3,10 @@ import { ReactNode } from "react";
 
 interface ButtonProps {
   children: ReactNode;
+  onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ children }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   const Button = styled("button")(({ theme }) => ({
     backgroundColor: "transparent",
     border: `1px solid ${theme.palette.primary.contrastText}`,
@@ -23,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({ children }) => {
     },
   }));
 
-  return <Button>{children}</Button>;
+  return <Button onClick={onClick}>{children}</Button>;
 };
 
 export default Button;
