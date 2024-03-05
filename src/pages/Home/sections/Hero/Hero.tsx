@@ -17,6 +17,12 @@ const Hero = () => {
     width: "75%",
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`,
+    [theme.breakpoints.down("md")]: {
+      width: "40%",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "60%",
+    },
   }));
 
   return (
