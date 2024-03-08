@@ -10,13 +10,37 @@ const Header = () => {
     },
   }));
 
+  const StyledMenuItem = styled(MenuItem)(({}) => ({
+    color: theme.palette.primary.contrastText,
+    fontFamily: "Inter",
+    fontSize: "1.25rem",
+    fontWeight: 300,
+    position: "relative",
+
+    "&::before": {
+      content: "''",
+      position: "absolute",
+      bottom: 0,
+      left: 0,
+      width: "100%",
+      height: "1px",
+      backgroundColor: theme.palette.secondary.main,
+      transform: "scaleX(0)", // Inicialmente oculta a borda
+      transition: "transform 0.3s ease-out", // Adiciona a transição
+    },
+
+    "&:hover::before": {
+      transform: "scaleX(1)", // Mostra a borda durante o hover
+    },
+  }));
+
   return (
     <>
       <AppBar position="relative">
         <StyledToolBar>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Skills</MenuItem>
-          <MenuItem>Projects</MenuItem>
+          <StyledMenuItem>About</StyledMenuItem>
+          <StyledMenuItem>Skills</StyledMenuItem>
+          <StyledMenuItem>Projects</StyledMenuItem>
         </StyledToolBar>
       </AppBar>
     </>
