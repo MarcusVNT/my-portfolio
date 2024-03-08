@@ -31,7 +31,7 @@ const Hero = () => {
         <Grid container spacing={2}>
           <Grid item xs={12} md={5}>
             <Box position="relative">
-              <Box position="absolute" width={"150%"} top={-100} right={0}>
+              <Box position="absolute" width={"150%"} top={-150} right={0}>
                 <AnimatedBackground />
               </Box>
               <Box position="relative" textAlign="center">
@@ -57,6 +57,14 @@ const Hero = () => {
               fontFamily="inter"
             >
               I'm Software Enginner
+            </Typography>
+            <Typography
+              color="primary.contrastText"
+              variant="h4"
+              textAlign="center"
+              fontFamily="inter"
+            >
+              Front-End Developer
             </Typography>
             <Grid
               container
