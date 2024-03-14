@@ -21,7 +21,7 @@ const Hero = () => {
       width: "50%",
     },
     [theme.breakpoints.down("sm")]: {
-      width: "75%",
+      width: "60%",
     },
   }));
 
@@ -72,6 +72,9 @@ const Hero = () => {
               justifyContent="center"
               pt={3}
               spacing={3}
+              sx={{
+                paddingBottom: { xs: "2rem", sm: 0 },
+              }}
             >
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
                 <Button onClick={() => console.log("Download do Currículo.")}>

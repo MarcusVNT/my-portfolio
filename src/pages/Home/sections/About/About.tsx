@@ -1,6 +1,7 @@
 import { Grid, Container, Typography, styled, Box } from "@mui/material";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import SchoolIcon from "@mui/icons-material/School";
+import { theme } from "../../../../theme";
 
 const About = () => {
   const StyledAbout = styled("section")(({}) => ({
@@ -9,6 +10,9 @@ const About = () => {
     display: "flex",
     justifyContent: "center",
     margin: "2rem 4rem",
+    [theme.breakpoints.down("xs")]: {
+      margin: "2rem 1rem",
+    },
   }));
 
   return (

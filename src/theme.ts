@@ -1,6 +1,6 @@
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
-export let darkModeTheme = createTheme({
+export let theme = createTheme({
   palette: {
     primary: {
       main: "#232323",
@@ -14,4 +14,4 @@ export let darkModeTheme = createTheme({
   },
 });
 
-darkModeTheme = responsiveFontSizes(darkModeTheme);
+theme = responsiveFontSizes(theme);
