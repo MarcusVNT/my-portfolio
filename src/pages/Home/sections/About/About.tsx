@@ -91,6 +91,7 @@ const About = () => {
         <Grid
           sx={{
             borderBottom: "1px solid #d4d4d4",
+            marginBottom: "1rem",
           }}
         >
           <Typography variant="body1" marginTop="2rem" marginBottom="1rem">
@@ -102,6 +103,11 @@ const About = () => {
             love to learn new technologies and frameworks. I am looking forward
             to working with a team of talented individuals and I am excited to
             bring my skills and experience to the table.
+          </Typography>
+        </Grid>
+        <Grid>
+          <Typography variant="h2" textAlign="center" fontFamily="Inter">
+            Skills
           </Typography>
         </Grid>
       </Container>
