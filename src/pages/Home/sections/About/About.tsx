@@ -86,6 +86,22 @@ const About = () => {
             </Typography>
           </Box>
         </Grid>
+        <Grid
+          sx={{
+            borderBottom: "1px solid #a2a2a2",
+          }}
+        >
+          <Typography variant="body1" marginTop="2rem" marginBottom="1rem">
+            I am a software developer with a passion for creating beautiful and
+            functional user interfaces. I have been working as a front-end
+            developer for the past two years and I have been improving my skills
+            ever since. I am currently pursuing a degree in Software Engineering
+            and I am expected to graduate in 2026. I am a quick learner and I
+            love to learn new technologies and frameworks. I am looking forward
+            to working with a team of talented individuals and I am excited to
+            bring my skills and experience to the table.
+          </Typography>
+        </Grid>
       </Container>
     </StyledAbout>
   );
