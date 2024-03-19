@@ -38,8 +38,9 @@ const About = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              border: "1px solid #000",
+              border: "1px solid #f0f0f0",
               borderRadius: "4px",
+              boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               padding: "1rem",
               gap: ".25rem",
               width: "203px",
@@ -64,8 +65,9 @@ const About = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              border: "1px solid #000",
+              border: "1px solid #f0f0f0",
               borderRadius: "4px",
+              boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               padding: "1rem",
               gap: ".25rem",
               width: "203px",
@@ -88,7 +90,7 @@ const About = () => {
         </Grid>
         <Grid
           sx={{
-            borderBottom: "1px solid #a2a2a2",
+            borderBottom: "1px solid #d4d4d4",
           }}
         >
           <Typography variant="body1" marginTop="2rem" marginBottom="1rem">
