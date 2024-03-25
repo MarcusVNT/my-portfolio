@@ -1,4 +1,4 @@
-import { Grid, Container, Typography, styled, Box } from "@mui/material";
+import { Grid, Container, Typography, styled, Box, Stack } from "@mui/material";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import SchoolIcon from "@mui/icons-material/School";
 import { theme } from "../../../../theme";
@@ -13,6 +13,16 @@ const About = () => {
     [theme.breakpoints.down("xs")]: {
       margin: "2rem 1rem",
     },
+  }));
+
+  const StyledBox = styled(Box)(({}) => ({
+    border: "1px solid #d4d4d4",
+    borderRadius: "4px",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: ".5rem 1.5rem",
+    width: "10rem",
   }));
 
   return (
@@ -109,6 +119,38 @@ const About = () => {
           <Typography variant="h2" textAlign="center" fontFamily="Inter">
             Skills
           </Typography>
+          <Stack flexDirection="row" gap="1rem" justifyContent="center">
+            <StyledBox>
+              <Typography margin="0" paragraph={true}>
+                HTML
+              </Typography>
+            </StyledBox>
+            <StyledBox>
+              <Typography margin="0" paragraph={true}>
+                CSS
+              </Typography>
+            </StyledBox>
+            <StyledBox>
+              <Typography margin="0" paragraph={true}>
+                Javascript
+              </Typography>
+            </StyledBox>
+            <StyledBox>
+              <Typography margin="0" paragraph={true}>
+                Typescript
+              </Typography>
+            </StyledBox>
+            <StyledBox>
+              <Typography margin="0" paragraph={true}>
+                HTML
+              </Typography>
+            </StyledBox>
+            <StyledBox>
+              <Typography margin="0" paragraph={true}>
+                HTML
+              </Typography>
+            </StyledBox>
+          </Stack>
         </Grid>
       </Container>
     </StyledAbout>
