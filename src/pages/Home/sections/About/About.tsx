@@ -1,9 +1,23 @@
 import { Grid, Container, Typography, styled, Box, Stack } from "@mui/material";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import SchoolIcon from "@mui/icons-material/School";
 import { theme } from "../../../../theme";
 
 const About = () => {
+  const HardSkillsArray: Array<string> = [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "Typescript",
+    "React",
+    "Material UI",
+    "Tailwind CSS",
+    "Next.JS",
+    "Node.JS",
+  ];
+
   const StyledAbout = styled("section")(({}) => ({
     backgroundColor: "#ffffff",
     height: "100vh",
@@ -15,7 +29,7 @@ const About = () => {
     },
   }));
 
-  const StyledBox = styled(Box)(({}) => ({
+  const StyledListItem = styled(ListItem)(({}) => ({
     border: "1px solid #d4d4d4",
     borderRadius: "4px",
     display: "flex",
@@ -80,7 +94,7 @@ const About = () => {
               boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
               padding: "1rem",
               gap: ".25rem",
-              width: "203px",
+              width: "205px",
             }}
           >
             <SchoolIcon />
@@ -119,38 +133,54 @@ const About = () => {
           <Typography variant="h2" textAlign="center" fontFamily="Inter">
             Skills
           </Typography>
-          <Stack flexDirection="row" gap="1rem" justifyContent="center">
-            <StyledBox>
+          {/* <Stack flexDirection="row" gap="1rem" justifyContent="center"> */}
+          <List>
+            <StyledListItem>
               <Typography margin="0" paragraph={true}>
                 HTML
               </Typography>
-            </StyledBox>
-            <StyledBox>
+            </StyledListItem>
+            <StyledListItem>
               <Typography margin="0" paragraph={true}>
                 CSS
               </Typography>
-            </StyledBox>
-            <StyledBox>
+            </StyledListItem>
+            <StyledListItem>
               <Typography margin="0" paragraph={true}>
                 Javascript
               </Typography>
-            </StyledBox>
-            <StyledBox>
+            </StyledListItem>
+            <StyledListItem>
               <Typography margin="0" paragraph={true}>
                 Typescript
               </Typography>
-            </StyledBox>
-            <StyledBox>
+            </StyledListItem>
+            <StyledListItem>
               <Typography margin="0" paragraph={true}>
-                HTML
+                React
               </Typography>
-            </StyledBox>
-            <StyledBox>
+            </StyledListItem>
+            <StyledListItem>
               <Typography margin="0" paragraph={true}>
-                HTML
+                Material UI
               </Typography>
-            </StyledBox>
-          </Stack>
+            </StyledListItem>
+            <StyledListItem>
+              <Typography margin="0" paragraph={true}>
+                Tailwind CSS
+              </Typography>
+            </StyledListItem>
+            <StyledListItem>
+              <Typography margin="0" paragraph={true}>
+                Next.JS
+              </Typography>
+            </StyledListItem>
+            <StyledListItem>
+              <Typography margin="0" paragraph={true}>
+                Node.JS
+              </Typography>
+            </StyledListItem>
+          </List>
         </Grid>
       </Container>
     </StyledAbout>
