@@ -131,9 +131,8 @@ const About = () => {
         </Grid>
         <Grid>
           <Typography variant="h2" textAlign="center" fontFamily="Inter">
-            Skills
+            Hard Skills
           </Typography>
-          {/* <Stack flexDirection="row" gap="1rem" justifyContent="center"> */}
           <List>
             {hardSkillsArray.map((hardSkill, index) => (
               <ListItem key={index}>{hardSkill}</ListItem>
