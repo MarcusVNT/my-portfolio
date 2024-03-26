@@ -6,7 +6,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import { theme } from "../../../../theme";
 
 const About = () => {
-  const HardSkillsArray: Array<string> = [
+  const hardSkillsArray: Array<string> = [
     "HTML",
     "CSS",
     "Javascript",
@@ -135,51 +135,9 @@ const About = () => {
           </Typography>
           {/* <Stack flexDirection="row" gap="1rem" justifyContent="center"> */}
           <List>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                HTML
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                CSS
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                Javascript
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                Typescript
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                React
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                Material UI
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                Tailwind CSS
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                Next.JS
-              </Typography>
-            </StyledListItem>
-            <StyledListItem>
-              <Typography margin="0" paragraph={true}>
-                Node.JS
-              </Typography>
-            </StyledListItem>
+            {hardSkillsArray.map((hardSkill, index) => (
+              <ListItem key={index}>{hardSkill}</ListItem>
+            ))}
           </List>
         </Grid>
       </Container>
