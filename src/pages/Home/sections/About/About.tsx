@@ -1,4 +1,4 @@
-import { Grid, Container, Typography, styled, Box, Stack } from "@mui/material";
+import { Grid, Container, Typography, styled, Box } from "@mui/material";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
@@ -29,6 +29,13 @@ const About = () => {
     },
   }));
 
+  const StyledList = styled(List)(({}) => ({
+    display: "grid",
+    justifyContent: "center",
+    gridTemplateColumns: "repeat(6, 1fr)",
+    gap: "1rem",
+  }));
+
   const StyledListItem = styled(ListItem)(({}) => ({
     border: "1px solid #d4d4d4",
     borderRadius: "4px",
@@ -55,6 +62,7 @@ const About = () => {
           sx={{
             justifyContent: "center",
             gap: "3rem",
+            mb: "2rem",
           }}
         >
           <Box
@@ -118,7 +126,7 @@ const About = () => {
             marginBottom: "1rem",
           }}
         >
-          <Typography variant="body1" marginTop="2rem" marginBottom="1rem">
+          <Typography variant="body1" marginBottom="1rem">
             I am a software developer with a passion for creating beautiful and
             functional user interfaces. I have been working as a front-end
             developer for the past two years and I have been improving my skills
@@ -130,14 +138,19 @@ const About = () => {
           </Typography>
         </Grid>
         <Grid>
-          <Typography variant="h2" textAlign="center" fontFamily="Inter">
+          <Typography
+            variant="h2"
+            textAlign="center"
+            fontFamily="Inter"
+            mb="1.5rem"
+          >
             Hard Skills
           </Typography>
-          <List>
+          <StyledList>
             {hardSkillsArray.map((hardSkill, index) => (
-              <ListItem key={index}>{hardSkill}</ListItem>
+              <StyledListItem key={index}>{hardSkill}</StyledListItem>
             ))}
-          </List>
+          </StyledList>
         </Grid>
       </Container>
     </StyledAbout>
