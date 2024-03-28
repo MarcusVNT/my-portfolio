@@ -20,7 +20,6 @@ const About = () => {
 
   const StyledAbout = styled("section")(({}) => ({
     backgroundColor: "#ffffff",
-    height: "100vh",
     display: "flex",
     justifyContent: "center",
     margin: "2rem 4rem",
@@ -34,6 +33,7 @@ const About = () => {
     justifyContent: "center",
     gridTemplateColumns: "repeat(6, 1fr)",
     gap: "1rem",
+    marginBottom: "2rem",
   }));
 
   const StyledListItem = styled(ListItem)(({}) => ({
@@ -137,7 +137,7 @@ const About = () => {
             bring my skills and experience to the table.
           </Typography>
         </Grid>
-        <Grid>
+        <Grid borderBottom="1px solid #d4d4d4">
           <Typography
             variant="h2"
             textAlign="center"
@@ -145,6 +145,19 @@ const About = () => {
             mb="1.5rem"
           >
             Hard Skills
+          </Typography>
+          <StyledList>
+            {hardSkillsArray.map((hardSkill, index) => (
+              <StyledListItem key={index}>{hardSkill}</StyledListItem>
+            ))}
+          </StyledList>
+          <Typography
+            variant="h2"
+            textAlign="center"
+            fontFamily="Inter"
+            mb="1.5rem"
+          >
+            Soft Skills
           </Typography>
           <StyledList>
             {hardSkillsArray.map((hardSkill, index) => (
