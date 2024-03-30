@@ -17,6 +17,17 @@ const About = () => {
     "Next.JS",
     "Node.JS",
   ];
+  const softSkillsArray: Array<string> = [
+    "Communication",
+    "Teamwork",
+    "Problem Solving",
+    "Time Management",
+    "Adaptability",
+    "Creativity",
+    "Empathy",
+    "Critical Thinking",
+    "Professional Ethics",
+  ];
 
   const StyledAbout = styled("section")(({}) => ({
     backgroundColor: "#ffffff",
@@ -34,6 +45,15 @@ const About = () => {
     gridTemplateColumns: "repeat(6, 1fr)",
     gap: "1rem",
     marginBottom: "2rem",
+    [theme.breakpoints.down("lg")]: {
+      gridTemplateColumns: "repeat(4, 1fr)",
+    },
+    [theme.breakpoints.down("md")]: {
+      gridTemplateColumns: "repeat(3, 1fr)",
+    },
+    [theme.breakpoints.down("sm")]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
+    },
   }));
 
   const StyledListItem = styled(ListItem)(({}) => ({
@@ -160,8 +180,8 @@ const About = () => {
             Soft Skills
           </Typography>
           <StyledList>
-            {hardSkillsArray.map((hardSkill, index) => (
-              <StyledListItem key={index}>{hardSkill}</StyledListItem>
+            {softSkillsArray.map((softSkill, index) => (
+              <StyledListItem key={index}>{softSkill}</StyledListItem>
             ))}
           </StyledList>
         </Grid>
