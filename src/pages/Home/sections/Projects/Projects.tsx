@@ -1,4 +1,5 @@
-import { Container, Typography, styled } from "@mui/material";
+import { Container, Grid, Stack, Typography, styled } from "@mui/material";
+import Skyfall from "../../../../assets/images/skyfall.jpg";
 
 const Projects = () => {
   const StyledProjects = styled("section")(({ theme }) => ({
@@ -24,6 +25,12 @@ const Projects = () => {
         >
           Projects
         </Typography>
+
+        <Grid>
+          <Stack border="1px solid #fff">
+            <img src={Skyfall} width="300px" />
+          </Stack>
+        </Grid>
       </Container>
     </StyledProjects>
   );
