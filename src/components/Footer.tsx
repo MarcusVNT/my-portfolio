@@ -1,4 +1,9 @@
-import { Button, Grid, Stack, styled } from "@mui/material";
+import { Button, Stack, styled } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import XIcon from "@mui/icons-material/X";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 const Footer = () => {
   const StyledFooter = styled("div")(({}) => ({
@@ -17,11 +22,21 @@ const Footer = () => {
         </p>
       </Stack>
       <Stack flexDirection="row">
-        <Button>LinkedIn</Button>
-        <Button>GitHub</Button>
-        <Button>X</Button>
-        <Button>Instagram</Button>
-        <Button>E-mail</Button>
+        <Button>
+          <LinkedInIcon />
+        </Button>
+        <Button>
+          <GitHubIcon />
+        </Button>
+        <Button>
+          <XIcon />
+        </Button>
+        <Button>
+          <InstagramIcon />
+        </Button>
+        <Button>
+          <MailOutlineIcon />
+        </Button>
       </Stack>
     </StyledFooter>
   );
