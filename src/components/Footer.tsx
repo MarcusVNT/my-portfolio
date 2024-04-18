@@ -22,19 +22,19 @@ const Footer = () => {
         </p>
       </Stack>
       <Stack flexDirection="row">
-        <Button>
+        <Button href="www.linkedin.com/in/marcusvnt">
           <LinkedInIcon />
         </Button>
-        <Button>
+        <Button href="https://github.com/MarcusVNT">
           <GitHubIcon />
         </Button>
-        <Button>
+        <Button href="https://twitter.com/marcusvnt">
           <XIcon />
         </Button>
-        <Button>
+        <Button href="https://www.instagram.com/marcusvnt/">
           <InstagramIcon />
         </Button>
-        <Button>
+        <Button href="marcus-vnt@live.com">
           <MailOutlineIcon />
         </Button>
       </Stack>
