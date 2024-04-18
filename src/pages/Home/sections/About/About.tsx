@@ -64,6 +64,10 @@ const About = () => {
     alignItems: "center",
     padding: ".5rem 1.5rem",
     width: "10rem",
+    transition: "transform .3s ease",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
   }));
 
   return (
@@ -96,6 +100,10 @@ const About = () => {
               padding: "1rem",
               gap: ".25rem",
               width: "203px",
+              transition: "transform .3s ease",
+              "&:hover": {
+                transform: "scale(1.1)",
+              },
             }}
           >
             <WorkspacePremiumIcon />
@@ -123,6 +131,10 @@ const About = () => {
               padding: "1rem",
               gap: ".25rem",
               width: "205px",
+              transition: "transform .3s ease",
+              "&:hover": {
+                transform: "scale(1.1)",
+              },
             }}
           >
             <SchoolIcon />
