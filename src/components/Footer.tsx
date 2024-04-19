@@ -17,8 +17,7 @@ const Footer = () => {
     <StyledFooter>
       <Stack>
         <p>
-          © 2024 Marcus Vinícius do Nascimento Teixeira. Todos os direitos
-          reservados.
+          © 2024 Marcus Vinícius do Nascimento Teixeira. All rights reserved.
         </p>
       </Stack>
       <Stack flexDirection="row">
