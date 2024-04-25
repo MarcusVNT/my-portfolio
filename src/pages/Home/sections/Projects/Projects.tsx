@@ -1,5 +1,4 @@
 import { Container, Typography, styled } from "@mui/material";
-import SwiperComponent from "./Swiper";
 
 const Projects = () => {
   const StyledProjects = styled("section")(({ theme }) => ({
@@ -26,7 +25,6 @@ const Projects = () => {
         >
           Projects
         </Typography>
-        <SwiperComponent />
       </Container>
     </StyledProjects>
   );
