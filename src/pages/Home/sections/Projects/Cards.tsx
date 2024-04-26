@@ -7,19 +7,20 @@ export default function Cards() {
       <Grid item xs={5}>
         <Card
           sx={{
-            borderRadius: "16px",
+            borderRadius: "8px",
           }}
         >
-          <CardContent sx={{ padding: "0" }}>
+          <CardContent>
             <img
               src={Skyfall}
               alt="Skyfall"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                borderRadius: "8px 8px 0 0",
               }}
             />
-            <Stack sx={{ padding: "16px" }}>
+            <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
                 Lizard
               </Typography>
@@ -34,19 +35,20 @@ export default function Cards() {
       <Grid item xs={5}>
         <Card
           sx={{
-            borderRadius: "16px",
+            borderRadius: "8px",
           }}
         >
-          <CardContent sx={{ padding: "0" }}>
+          <CardContent>
             <img
               src={Skyfall}
               alt="Skyfall"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                borderRadius: "8px 8px 0 0",
               }}
             />
-            <Stack sx={{ padding: "16px" }}>
+            <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
                 Lizard
               </Typography>
@@ -61,19 +63,20 @@ export default function Cards() {
       <Grid item xs={5}>
         <Card
           sx={{
-            borderRadius: "16px",
+            borderRadius: "8px",
           }}
         >
-          <CardContent sx={{ padding: "0" }}>
+          <CardContent>
             <img
               src={Skyfall}
               alt="Skyfall"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                borderRadius: "8px 8px 0 0",
               }}
             />
-            <Stack sx={{ padding: "16px" }}>
+            <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
                 Lizard
               </Typography>
@@ -88,19 +91,20 @@ export default function Cards() {
       <Grid item xs={5}>
         <Card
           sx={{
-            borderRadius: "16px",
+            borderRadius: "8px",
           }}
         >
-          <CardContent sx={{ padding: "0" }}>
+          <CardContent>
             <img
               src={Skyfall}
               alt="Skyfall"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                borderRadius: "8px 8px 0 0",
               }}
             />
-            <Stack sx={{ padding: "16px" }}>
+            <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
                 Lizard
               </Typography>
@@ -115,19 +119,20 @@ export default function Cards() {
       <Grid item xs={5}>
         <Card
           sx={{
-            borderRadius: "16px",
+            borderRadius: "8px",
           }}
         >
-          <CardContent sx={{ padding: "0" }}>
+          <CardContent>
             <img
               src={Skyfall}
               alt="Skyfall"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                borderRadius: "8px 8px 0 0",
               }}
             />
-            <Stack sx={{ padding: "16px" }}>
+            <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
                 Lizard
               </Typography>
@@ -142,19 +147,20 @@ export default function Cards() {
       <Grid item xs={5}>
         <Card
           sx={{
-            borderRadius: "16px",
+            borderRadius: "8px",
           }}
         >
-          <CardContent sx={{ padding: "0" }}>
+          <CardContent>
             <img
               src={Skyfall}
               alt="Skyfall"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                borderRadius: "8px 8px 0 0",
               }}
             />
-            <Stack sx={{ padding: "16px" }}>
+            <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
                 Lizard
               </Typography>
