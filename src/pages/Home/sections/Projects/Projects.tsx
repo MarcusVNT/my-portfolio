@@ -1,4 +1,5 @@
 import { Container, Typography, styled } from "@mui/material";
+import Cards from "./Cards";
 
 const Projects = () => {
   const StyledProjects = styled("section")(({ theme }) => ({
@@ -25,6 +26,8 @@ const Projects = () => {
         >
           Projects
         </Typography>
+
+        <Cards />
       </Container>
     </StyledProjects>
   );
