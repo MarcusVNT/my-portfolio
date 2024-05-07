@@ -1,6 +1,7 @@
 import { Card, CardContent, Grid, Stack, Typography } from "@mui/material";
 import Dogs from "../../../../../public/dogs.png";
 import AudioNotes from "../../../../../public/audioNotes.png";
+import FancyWatches from "../../../../../public/fancyWatches.png";
 import Skyfall from "../../../../../public/skyfall.jpg";
 
 export default function Cards() {
@@ -80,8 +81,8 @@ export default function Cards() {
         >
           <CardContent>
             <img
-              src={Skyfall}
-              alt="Skyfall"
+              src={FancyWatches}
+              alt="Fancy Watches"
               style={{
                 objectFit: "contain",
                 width: "100%",
@@ -90,11 +91,15 @@ export default function Cards() {
             />
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
-                Lizard
+                Fancy Watches
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                Fancy Watches is a project that I developed to practice my
+                skills and learn more about HTML, CSS and just a little of
+                Javascript. The project was made 100% by me, and I was able to
+                learn a lot about CSS Flexbox, CSS Grid, and other CSS
+                properties. Fancy Watches is about a fancy store that sells
+                watches, and I was able to create a responsive layout for it.
               </Typography>
             </Stack>
           </CardContent>
