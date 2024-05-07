@@ -58,7 +58,7 @@ export default function Cards() {
               }}
             />
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
-              <Typography variant="h5" component="div">
+              <Typography variant="h5" component="div" marginBottom="8px">
                 AudioNotes
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
@@ -90,7 +90,7 @@ export default function Cards() {
               }}
             />
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
-              <Typography variant="h5" component="div">
+              <Typography variant="h5" component="div" marginBottom="8px">
                 Fancy Watches
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
