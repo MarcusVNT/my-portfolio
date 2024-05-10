@@ -12,6 +12,7 @@ export default function Cards() {
         <Card
           sx={{
             borderRadius: "8px",
+            height: "500px",
           }}
         >
           <CardContent>
@@ -46,6 +47,7 @@ export default function Cards() {
         <Card
           sx={{
             borderRadius: "8px",
+            height: "500px",
           }}
         >
           <CardContent>
@@ -78,6 +80,7 @@ export default function Cards() {
         <Card
           sx={{
             borderRadius: "8px",
+            height: "500px",
           }}
         >
           <CardContent>
@@ -110,6 +113,7 @@ export default function Cards() {
         <Card
           sx={{
             borderRadius: "8px",
+            height: "500px",
           }}
         >
           <CardContent>
@@ -143,6 +147,7 @@ export default function Cards() {
         <Card
           sx={{
             borderRadius: "8px",
+            height: "500px",
           }}
         >
           <CardContent>
@@ -171,6 +176,7 @@ export default function Cards() {
         <Card
           sx={{
             borderRadius: "8px",
+            height: "500px",
           }}
         >
           <CardContent>
