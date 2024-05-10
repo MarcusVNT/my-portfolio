@@ -2,6 +2,7 @@ import { Card, CardContent, Grid, Stack, Typography } from "@mui/material";
 import Dogs from "../../../../../public/dogs.png";
 import AudioNotes from "../../../../../public/audioNotes.png";
 import FancyWatches from "../../../../../public/fancyWatches.png";
+import LojaMaster from "../../../../../public/lojaMaster.png";
 import Skyfall from "../../../../../public/skyfall.jpg";
 
 export default function Cards() {
@@ -113,8 +114,8 @@ export default function Cards() {
         >
           <CardContent>
             <img
-              src={Skyfall}
-              alt="Skyfall"
+              src={LojaMaster}
+              alt="Loja Master"
               style={{
                 objectFit: "contain",
                 width: "100%",
@@ -122,12 +123,17 @@ export default function Cards() {
               }}
             />
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
-              <Typography variant="h5" component="div">
-                Lizard
+              <Typography variant="h5" component="div" marginBottom="8px">
+                Loja Master
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                Loja Master is a project that I developed to practice and learn
+                about how navegation bettween pages works in a website that use
+                Node.js and React.JS and how to use the React Router Dom. The
+                project was made 100% by me, and I was able to learn a lot about
+                how to create a simple website using React.JS and Node.JS. Loja
+                Master is about a store that sells tech products, and I was able
+                to create a responsive layout for it.
               </Typography>
             </Stack>
           </CardContent>
