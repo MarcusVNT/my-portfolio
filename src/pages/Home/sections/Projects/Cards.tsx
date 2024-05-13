@@ -3,6 +3,7 @@ import Dogs from "../../../../../public/dogs.png";
 import AudioNotes from "../../../../../public/audioNotes.png";
 import FancyWatches from "../../../../../public/fancyWatches.png";
 import LojaMaster from "../../../../../public/lojaMaster.png";
+import BMI from "../../../../../public/bmiFlutter.png";
 import Skyfall from "../../../../../public/skyfall.jpg";
 
 export default function Cards() {
@@ -16,15 +17,18 @@ export default function Cards() {
           }}
         >
           <CardContent>
+            {/* <Stack maxHeight="600px"> */}
             <img
               src={Dogs}
               alt="Dogs - Social Media for Pets"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                maxHeight: "250px",
                 borderRadius: "8px 8px 0 0",
               }}
             />
+            {/* </Stack> */}
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div" marginBottom="8px">
                 Dogs | The Social Media For Pets
@@ -57,6 +61,7 @@ export default function Cards() {
               style={{
                 objectFit: "contain",
                 width: "100%",
+                maxHeight: "250px",
                 borderRadius: "8px 8px 0 0",
               }}
             />
@@ -90,6 +95,7 @@ export default function Cards() {
               style={{
                 objectFit: "contain",
                 width: "100%",
+                maxHeight: "250px",
                 borderRadius: "8px 8px 0 0",
               }}
             />
@@ -123,6 +129,7 @@ export default function Cards() {
               style={{
                 objectFit: "contain",
                 width: "100%",
+                maxHeight: "250px",
                 borderRadius: "8px 8px 0 0",
               }}
             />
@@ -152,21 +159,30 @@ export default function Cards() {
         >
           <CardContent>
             <img
-              src={Skyfall}
-              alt="Skyfall"
+              src={BMI}
+              alt="BMI Calculator"
               style={{
                 objectFit: "contain",
                 width: "100%",
+                maxHeight: "250px",
                 borderRadius: "8px 8px 0 0",
               }}
             />
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
-                Lizard
+                BMI Calculator
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                BMI Calculator is a mobile project that I developed in
+                Dart/Flutter. The project was made 100% by me. The BMI
+                Calculator is a simple app that calculates the body mass index
+                of a person. The app has a simple and clean layout and was
+                developed to practice my skills in Dart/Flutter during the
+                Santander Bootcamp, where I was one of the top 25 participants
+                out of more than 3000 people. The calculator makes the math and
+                shows the result in a list and save it in the local storage. The
+                user can see if he is underweight, normal weight, overweight or
+                obese.
               </Typography>
             </Stack>
           </CardContent>
@@ -186,6 +202,7 @@ export default function Cards() {
               style={{
                 objectFit: "contain",
                 width: "100%",
+                maxHeight: "250px",
                 borderRadius: "8px 8px 0 0",
               }}
             />
