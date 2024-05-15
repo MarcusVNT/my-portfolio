@@ -4,7 +4,7 @@ import AudioNotes from "../../../../../public/audioNotes.png";
 import FancyWatches from "../../../../../public/fancyWatches.png";
 import LojaMaster from "../../../../../public/lojaMaster.png";
 import BMI from "../../../../../public/bmiFlutter.png";
-import Skyfall from "../../../../../public/skyfall.jpg";
+import BuscaCep from "../../../../../public/buscaCep.png";
 
 export default function Cards() {
   return (
@@ -197,8 +197,8 @@ export default function Cards() {
         >
           <CardContent>
             <img
-              src={Skyfall}
-              alt="Skyfall"
+              src={BuscaCep}
+              alt="Busca Cep"
               style={{
                 objectFit: "contain",
                 width: "100%",
@@ -208,11 +208,17 @@ export default function Cards() {
             />
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div">
-                Lizard
+                BuscaCep
               </Typography>
               <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                BuscaCep is a mobile project that I developed in Dart/Flutter.
+                It is a simple project with a simple design layout that I
+                developed to practice my skills in Dart/Flutter. It was also
+                developed during the Santander Bootcamp. You can search for a
+                Brazillian zip code and the app will show you the address that
+                is related to that zip code. The app uses an API to get the
+                address and show it to the user in a list in outher page. It
+                also saves the search in the local storage.
               </Typography>
             </Stack>
           </CardContent>
