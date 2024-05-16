@@ -1,4 +1,12 @@
-import { Card, CardContent, Grid, Stack, Typography } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  Grid,
+  Link,
+  Stack,
+  Typography,
+  styled,
+} from "@mui/material";
 import Dogs from "../../../../../public/dogs.png";
 import AudioNotes from "../../../../../public/audioNotes.png";
 import FancyWatches from "../../../../../public/fancyWatches.png";
@@ -7,6 +15,14 @@ import BMI from "../../../../../public/bmiFlutter.png";
 import BuscaCep from "../../../../../public/buscaCep.png";
 
 export default function Cards() {
+  const StyledLink = styled(Link)({
+    alignItems: "center",
+    justifyContent: "center",
+    color: "#fff",
+    "&:hover": {
+      color: "#4f8e3e",
+    },
+  });
   return (
     <Grid container gap="48px" justifyContent="center">
       <Grid item xs={5}>
@@ -223,6 +239,18 @@ export default function Cards() {
             </Stack>
           </CardContent>
         </Card>
+      </Grid>
+      <Grid item xs={12}>
+        <Typography
+          component="div"
+          marginBottom="16px"
+          color="#fff"
+          textAlign="center"
+          alignItems="center"
+        >
+          To see more projects, visit my Github profile
+          <StyledLink href="https://github.com/MarcusVNT"> here!</StyledLink>
+        </Typography>
       </Grid>
     </Grid>
   );
