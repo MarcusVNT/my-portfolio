@@ -25,7 +25,7 @@ export default function Cards() {
   });
   return (
     <Grid container gap="48px" justifyContent="center">
-      <Grid item xs={5}>
+      <Grid item sm={5}>
         <Card
           sx={{
             borderRadius: "8px",
@@ -63,7 +63,7 @@ export default function Cards() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={5}>
+      <Grid item sm={5}>
         <Card
           sx={{
             borderRadius: "8px",
@@ -97,7 +97,7 @@ export default function Cards() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={5}>
+      <Grid item sm={5}>
         <Card
           sx={{
             borderRadius: "8px",
@@ -131,7 +131,7 @@ export default function Cards() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={5}>
+      <Grid item sm={5}>
         <Card
           sx={{
             borderRadius: "8px",
@@ -166,7 +166,7 @@ export default function Cards() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={5}>
+      <Grid item sm={5}>
         <Card
           sx={{
             borderRadius: "8px",
@@ -204,7 +204,7 @@ export default function Cards() {
           </CardContent>
         </Card>
       </Grid>
-      <Grid item xs={5}>
+      <Grid item sm={5}>
         <Card
           sx={{
             borderRadius: "8px",
@@ -248,8 +248,8 @@ export default function Cards() {
           textAlign="center"
           alignItems="center"
         >
-          To see more projects, visit my Github profile
-          <StyledLink href="https://github.com/MarcusVNT"> here!</StyledLink>
+          To see more projects, visit my Github profile{" "}
+          <StyledLink href="https://github.com/MarcusVNT">here!</StyledLink>
         </Typography>
       </Grid>
     </Grid>
