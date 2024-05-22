@@ -1,15 +1,14 @@
 import { AppBar, MenuItem, Toolbar, styled } from "@mui/material";
 import { theme } from "../theme";
-import { useHistory } from 'react-router-dom';
-
 
 const Header = () => {
-  function MyMenu() {
-    const history = useHistory();
-  
-    const handleMenuItemClick = (to) => {
-      history.push(to);
-    };
+  const handleMenuItemClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const StyledToolBar = styled(Toolbar)(({}) => ({
     display: "flex",
     justifyContent: "end",
@@ -46,9 +45,10 @@ const Header = () => {
     <>
       <AppBar position="relative">
         <StyledToolBar>
-          <StyledMenuItem id="about">About</StyledMenuItem>
-          <StyledMenuItem id="skills">Skills</StyledMenuItem>
-          <StyledMenuItem onClick={() => handleMenuItemClick('#projects')}>
+          <StyledMenuItem onClick={() => handleMenuItemClick("about")}>
+            About
+          </StyledMenuItem>
+          <StyledMenuItem onClick={() => handleMenuItemClick("projects")}>
             Projects
           </StyledMenuItem>
         </StyledToolBar>
