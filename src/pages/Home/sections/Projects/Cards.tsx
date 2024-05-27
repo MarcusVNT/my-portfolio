@@ -1,5 +1,4 @@
 import {
-  Box,
   Card,
   CardContent,
   Grid,
@@ -34,92 +33,63 @@ export default function Cards() {
     transform: "translate(-50%, -50%)",
     width: 400,
     bgcolor: "background.paper",
-    border: "2px solid #4f8e3e",
+    border: "2px solid #000",
     boxShadow: 24,
     pt: 2,
     px: 4,
     pb: 3,
   };
 
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  function CardModal() {
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => {
+      setOpen(true);
+    };
+    const handleClose = () => {
+      setOpen(false);
+    };
+  }
 
   return (
     <Grid container gap="48px" justifyContent="center">
       <Grid item sm={5}>
-        <Card
-          sx={{
-            borderRadius: "8px",
-            height: "500px",
-            boxShadow: "inset 0px -150px 20px 0px rgba(0, 0, 0, 0.5)",
-            cursor: "pointer",
-          }}
-          onClick={handleOpen}
-        >
-          <CardContent>
-            <img
-              src={Dogs}
-              alt="Dogs - Social Media for Pets"
-              style={{
-                objectFit: "contain",
-                width: "100%",
-                maxHeight: "250px",
-                borderRadius: "8px 8px 0 0",
-              }}
-            />
-
-            <Stack
-              sx={{
-                padding: "16px 16px 0 16px",
-              }}
-            >
-              <Typography variant="h5" component="div" marginBottom="8px">
-                Dogs | The Social Media For Pets
-              </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                This is a project for a social media for pets, where pet owners
-                can create a profile for their pets and interact with other pet
-                owners. It was developed using ReactJS, JavaScript, Node.js, CSS
-                modules and other technologies. It's one of the most complex and
-                complete projects I've ever done, and I was able to learn about
-                using and integrating APIs, authenticating users, creating
-                comments and many other features that we deal with in day-to-day
-                development.
-              </Typography>
-            </Stack>
-          </CardContent>
-        </Card>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="Dogs | The Social Media For Pets"
-        >
-          <Box sx={modalStyle}>
-            <img
-              src={Dogs}
-              alt="Dogs - Social Media for Pets"
-              style={{
-                objectFit: "contain",
-                width: "100%",
-                maxHeight: "250px",
-                borderRadius: "8px 8px 0 0",
-              }}
-            />
-            <Typography id="modal-title" variant="h6" component="h2">
-              Dogs | The Social Media For Pets
-            </Typography>
-            <Typography id="modal-description" sx={{ mt: 2 }}>
-              This is a project for a social media for pets, where pet owners
-              can create a profile for their pets and interact with other pet
-              owners. It was developed using ReactJS, JavaScript, Node.js, CSS
-              modules and other technologies. It's one of the most complex and
-              complete projects I've ever done, and I was able to learn about
-              using and integrating APIs, authenticating users, creating
-              comments and many other features that we deal with in day-to-day
-              development.
-            </Typography>
-          </Box>
+        <Modal>
+          <Card
+            sx={{
+              borderRadius: "8px",
+              height: "500px",
+            }}
+          >
+            <CardContent>
+              {/* <Stack maxHeight="600px"> */}
+              <img
+                src={Dogs}
+                alt="Dogs - Social Media for Pets"
+                style={{
+                  objectFit: "contain",
+                  width: "100%",
+                  maxHeight: "250px",
+                  borderRadius: "8px 8px 0 0",
+                }}
+              />
+              {/* </Stack> */}
+              <Stack sx={{ padding: "16px 16px 0 16px" }}>
+                <Typography variant="h5" component="div" marginBottom="8px">
+                  Dogs | The Social Media For Pets
+                </Typography>
+                <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                  This is a project for a social media for pets, where pet
+                  owners can create a profile for their pets and interact with
+                  other pet owners. It was developed using ReactJS, JavaScript,
+                  Node.js, CSS modules and other technologies. It's one of the
+                  most complex and complete projects I've ever done, and I was
+                  able to learn about using and integrating APIs, authenticating
+                  users, creating comments and many other features that we deal
+                  with in day-to-day development.
+                </Typography>
+              </Stack>
+            </CardContent>
+          </Card>
         </Modal>
       </Grid>
       <Grid item sm={5}>
@@ -127,9 +97,6 @@ export default function Cards() {
           sx={{
             borderRadius: "8px",
             height: "500px",
-            boxShadow: "inset 0px -150px 20px 0px rgba(0, 0, 0, 0.5)",
-
-            cursor: "pointer",
           }}
         >
           <CardContent>
@@ -164,9 +131,6 @@ export default function Cards() {
           sx={{
             borderRadius: "8px",
             height: "500px",
-            boxShadow: "inset 0px -150px 20px 0px rgba(0, 0, 0, 0.5)",
-
-            cursor: "pointer",
           }}
         >
           <CardContent>
@@ -201,9 +165,6 @@ export default function Cards() {
           sx={{
             borderRadius: "8px",
             height: "500px",
-            boxShadow: "inset 0px -150px 20px 0px rgba(0, 0, 0, 0.5)",
-
-            cursor: "pointer",
           }}
         >
           <CardContent>
@@ -239,9 +200,6 @@ export default function Cards() {
           sx={{
             borderRadius: "8px",
             height: "500px",
-            boxShadow: "inset 0px -150px 20px 0px rgba(0, 0, 0, 0.5)",
-
-            cursor: "pointer",
           }}
         >
           <CardContent>
@@ -280,9 +238,6 @@ export default function Cards() {
           sx={{
             borderRadius: "8px",
             height: "500px",
-            boxShadow: "inset 0px -150px 20px 0px rgba(0, 0, 0, 0.5)",
-
-            cursor: "pointer",
           }}
         >
           <CardContent>
