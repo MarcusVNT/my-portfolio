@@ -14,7 +14,6 @@ import FancyWatches from "../../../../../public/fancyWatches.png";
 import LojaMaster from "../../../../../public/lojaMaster.png";
 import BMI from "../../../../../public/bmiFlutter.png";
 import BuscaCep from "../../../../../public/buscaCep.png";
-import { useState } from "react";
 
 export default function Cards() {
   const StyledLink = styled(Link)({
@@ -40,57 +39,45 @@ export default function Cards() {
     pb: 3,
   };
 
-  function CardModal() {
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => {
-      setOpen(true);
-    };
-    const handleClose = () => {
-      setOpen(false);
-    };
-  }
-
   return (
     <Grid container gap="48px" justifyContent="center">
       <Grid item sm={5}>
-        <Modal>
-          <Card
-            sx={{
-              borderRadius: "8px",
-              height: "500px",
-            }}
-          >
-            <CardContent>
-              {/* <Stack maxHeight="600px"> */}
-              <img
-                src={Dogs}
-                alt="Dogs - Social Media for Pets"
-                style={{
-                  objectFit: "contain",
-                  width: "100%",
-                  maxHeight: "250px",
-                  borderRadius: "8px 8px 0 0",
-                }}
-              />
-              {/* </Stack> */}
-              <Stack sx={{ padding: "16px 16px 0 16px" }}>
-                <Typography variant="h5" component="div" marginBottom="8px">
-                  Dogs | The Social Media For Pets
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  This is a project for a social media for pets, where pet
-                  owners can create a profile for their pets and interact with
-                  other pet owners. It was developed using ReactJS, JavaScript,
-                  Node.js, CSS modules and other technologies. It's one of the
-                  most complex and complete projects I've ever done, and I was
-                  able to learn about using and integrating APIs, authenticating
-                  users, creating comments and many other features that we deal
-                  with in day-to-day development.
-                </Typography>
-              </Stack>
-            </CardContent>
-          </Card>
-        </Modal>
+        <Card
+          sx={{
+            borderRadius: "8px",
+            height: "500px",
+          }}
+        >
+          <CardContent>
+            {/* <Stack maxHeight="600px"> */}
+            <img
+              src={Dogs}
+              alt="Dogs - Social Media for Pets"
+              style={{
+                objectFit: "contain",
+                width: "100%",
+                maxHeight: "250px",
+                borderRadius: "8px 8px 0 0",
+              }}
+            />
+            {/* </Stack> */}
+            <Stack sx={{ padding: "16px 16px 0 16px" }}>
+              <Typography variant="h5" component="div" marginBottom="8px">
+                Dogs | The Social Media For Pets
+              </Typography>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                This is a project for a social media for pets, where pet owners
+                can create a profile for their pets and interact with other pet
+                owners. It was developed using ReactJS, JavaScript, Node.js, CSS
+                modules and other technologies. It's one of the most complex and
+                complete projects I've ever done, and I was able to learn about
+                using and integrating APIs, authenticating users, creating
+                comments and many other features that we deal with in day-to-day
+                development.
+              </Typography>
+            </Stack>
+          </CardContent>
+        </Card>
       </Grid>
       <Grid item sm={5}>
         <Card
