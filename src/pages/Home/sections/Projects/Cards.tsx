@@ -49,7 +49,6 @@ export default function Cards() {
           }}
         >
           <CardContent>
-            {/* <Stack maxHeight="600px"> */}
             <img
               src={Dogs}
               alt="Dogs - Social Media for Pets"
@@ -60,7 +59,7 @@ export default function Cards() {
                 borderRadius: "8px 8px 0 0",
               }}
             />
-            {/* </Stack> */}
+
             <Stack sx={{ padding: "16px 16px 0 16px" }}>
               <Typography variant="h5" component="div" marginBottom="8px">
                 Dogs | The Social Media For Pets
