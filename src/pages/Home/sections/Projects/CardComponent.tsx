@@ -32,6 +32,7 @@ const CardComponent: FC<CardInfo> = ({ title, image, description, link }) => {
       <Card
         sx={{
           borderRadius: "8px",
+          backgroundColor: "#e2e2e2",
           height: "400px",
           boxShadow: "inset 0px -100px 20px 0px rgba(0, 0, 0, 0.5)",
           cursor: "pointer",
@@ -46,7 +47,6 @@ const CardComponent: FC<CardInfo> = ({ title, image, description, link }) => {
               objectFit: "contain",
               width: "100%",
               maxHeight: "200px",
-              borderRadius: "8px 8px 0 0",
             }}
           />
           <Stack sx={{ padding: "16px 16px 0 16px" }}>
