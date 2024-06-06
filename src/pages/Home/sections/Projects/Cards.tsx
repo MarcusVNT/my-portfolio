@@ -17,10 +17,15 @@ export default function Cards() {
       {cardsData.map((card: CardInfo, index: number) => (
         <CardComponent key={index} {...card} />
       ))}
-      <Typography sx={{ color: "#fff" }}>
-        {" "}
-        Para ver mais projectos clique{" "}
-        <StyledLink href="https://github.com/MarcusVNT">aqui.</StyledLink>
+      <Typography
+        component="div"
+        marginBottom="16px"
+        color="#fff"
+        textAlign="center"
+        alignItems="center"
+      >
+        To see more projects, visit my Github profile{" "}
+        <StyledLink href="https://github.com/MarcusVNT">here!</StyledLink>
       </Typography>
     </Grid>
   );
