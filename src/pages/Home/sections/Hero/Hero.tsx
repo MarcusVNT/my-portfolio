@@ -1,9 +1,10 @@
-import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { Box, Container, Grid, Stack, Typography, styled } from "@mui/material";
 import Avatar from "../../../../assets/images/avatar.png";
 import DownloadIcon from "@mui/icons-material/FileDownloadOutlined";
 import EmailIcon from "@mui/icons-material/EmailOutlined";
 import Button from "../../../../components/Button";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
@@ -41,31 +42,38 @@ const Hero = () => {
           </Grid>
 
           <Grid item xs={12} md={7}>
-            <Typography
-              color="primary.contrastText"
-              variant="h1"
-              textAlign="center"
-              pb={2}
-              fontFamily="Finlandica"
-            >
-              Marcus Vinícius
-            </Typography>
-            <Typography
-              color="primary.contrastText"
-              variant="h2"
-              textAlign="center"
-              fontFamily="inter"
-            >
-              I'm Software Enginner
-            </Typography>
-            <Typography
-              color="primary.contrastText"
-              variant="h4"
-              textAlign="center"
-              fontFamily="inter"
-            >
-              Front-End Developer
-            </Typography>
+            <Stack alignItems="center">
+              <TypeAnimation
+                sequence={[0, "Marcus Vinícius"]}
+                repeat={Infinity}
+                style={{
+                  color: "#fff",
+                  fontSize: "6rem",
+                  fontFamily: "Finlandica",
+                  textAlign: "center",
+                }}
+                cursor={false}
+              />
+            </Stack>
+            <Stack alignItems="center">
+              <TypeAnimation
+                sequence={[
+                  1500,
+                  "I'm Software Enginner",
+                  1000,
+                  "I'm Front-End Developer",
+                  1000,
+                ]}
+                repeat={Infinity}
+                style={{
+                  color: "#fff",
+                  fontFamily: "inter",
+                  fontSize: "3.5rem",
+                  fontWeight: 200,
+                }}
+              />
+            </Stack>
+
             <Grid
               container
               display="flex"
