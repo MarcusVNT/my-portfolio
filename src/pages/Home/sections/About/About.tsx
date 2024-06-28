@@ -45,6 +45,7 @@ const About = () => {
     gridTemplateColumns: "repeat(6, 1fr)",
     gap: "1rem",
     marginBottom: "2rem",
+
     [theme.breakpoints.down("lg")]: {
       gridTemplateColumns: "repeat(4, 1fr)",
     },
@@ -59,6 +60,7 @@ const About = () => {
   const StyledListItem = styled(ListItem)(({}) => ({
     border: "1px solid #d4d4d4",
     borderRadius: "4px",
+    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
