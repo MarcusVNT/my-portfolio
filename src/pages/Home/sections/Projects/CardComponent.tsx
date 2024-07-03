@@ -38,7 +38,7 @@ const CardComponent: FC<CardInfo> = ({ title, image, description, link }) => {
           borderRadius: "8px",
           backgroundColor: "#d8d8d8",
           height: "400px",
-          boxShadow: "inset 0px -100px 20px 0px rgba(0, 0, 0, 0.5)",
+          boxShadow: "inset 0px -60px 20px 0px rgba(0, 0, 0, 0.5)",
           cursor: "pointer",
         }}
         onClick={handleOpen}
