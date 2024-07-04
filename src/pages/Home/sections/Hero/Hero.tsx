@@ -44,7 +44,7 @@ const Hero = () => {
           <Grid item xs={12} md={7}>
             <Stack alignItems="center">
               <TypeAnimation
-                sequence={[0, "Marcus Vinícius"]}
+                sequence={[800, "Marcus Vinícius"]}
                 repeat={Infinity}
                 style={{
                   color: "#fff",
@@ -58,7 +58,7 @@ const Hero = () => {
             <Stack alignItems="center">
               <TypeAnimation
                 sequence={[
-                  1500,
+                  1800,
                   "I'm Software Enginner",
                   1000,
                   "I'm Front-End Developer",
