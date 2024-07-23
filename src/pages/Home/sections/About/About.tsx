@@ -69,6 +69,7 @@ const About = () => {
     transition: "transform .3s ease",
     "&:hover": {
       transform: "scale(1.1)",
+      backgroundColor: "#f0f0f0",
     },
   }));
 
