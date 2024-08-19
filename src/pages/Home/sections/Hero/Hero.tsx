@@ -1,4 +1,12 @@
-import { Box, Container, Grid, Stack, Typography, styled } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Stack,
+  Typography,
+  styled,
+  useMediaQuery,
+} from "@mui/material";
 import Avatar from "../../../../assets/images/avatar.png";
 import DownloadIcon from "@mui/icons-material/FileDownloadOutlined";
 import EmailIcon from "@mui/icons-material/EmailOutlined";
@@ -25,6 +33,7 @@ const Hero = () => {
       width: "60%",
     },
   }));
+  const isSmallScreen = useMediaQuery("(max-width:700px)");
 
   return (
     <StyledHero>
@@ -48,7 +57,7 @@ const Hero = () => {
                 repeat={Infinity}
                 style={{
                   color: "#fff",
-                  fontSize: "6rem",
+                  fontSize: isSmallScreen ? "4rem" : "6rem",
                   fontFamily: "Finlandica",
                   textAlign: "center",
                 }}
@@ -68,13 +77,13 @@ const Hero = () => {
                 style={{
                   color: "#fff",
                   fontFamily: "inter",
-                  fontSize: "3.5rem",
+                  fontSize: isSmallScreen ? "2.5rem" : "3.5rem",
                   fontWeight: 200,
                 }}
               />
             </Stack>
 
-            <Grid
+            {/* <Grid
               container
               display="flex"
               justifyContent="center"
@@ -96,7 +105,7 @@ const Hero = () => {
                   <Typography>Contact Me</Typography>
                 </Button>
               </Grid>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
       </Container>

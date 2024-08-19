@@ -14,7 +14,7 @@ const Footer = () => {
     marginBottom: "16px",
   }));
   return (
-    <StyledFooter>
+    <StyledFooter id="contact-me">
       <Stack>
         <p>
           © 2024 Marcus Vinícius do Nascimento Teixeira. All rights reserved.
