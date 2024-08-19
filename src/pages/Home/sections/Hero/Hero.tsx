@@ -3,14 +3,10 @@ import {
   Container,
   Grid,
   Stack,
-  Typography,
   styled,
   useMediaQuery,
 } from "@mui/material";
 import Avatar from "../../../../assets/images/avatar.png";
-import DownloadIcon from "@mui/icons-material/FileDownloadOutlined";
-import EmailIcon from "@mui/icons-material/EmailOutlined";
-import Button from "../../../../components/Button";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground";
 import { TypeAnimation } from "react-type-animation";
 
