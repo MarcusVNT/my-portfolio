@@ -13,7 +13,7 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   const StyledHero = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,
-    height: "100vh",
+    padding: "4rem 0",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
