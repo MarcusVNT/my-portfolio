@@ -54,7 +54,6 @@ const Header = () => {
           <StyledMenuItem onClick={() => handleMenuItemClick("contact-me")}>
             Contact Me
           </StyledMenuItem>
-          <StyledMenuItem>Download CV</StyledMenuItem>
         </StyledToolBar>
       </AppBar>
     </>
