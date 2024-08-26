@@ -29,7 +29,7 @@ const Hero = () => {
       width: "60%",
     },
   }));
-  const isSmallScreen = useMediaQuery("(max-width:700px)");
+  const isSmallScreen = useMediaQuery("(max-width:500px)");
 
   return (
     <StyledHero>
@@ -53,7 +53,7 @@ const Hero = () => {
                 repeat={Infinity}
                 style={{
                   color: "#fff",
-                  fontSize: isSmallScreen ? "4rem" : "6rem",
+                  fontSize: isSmallScreen ? "3rem" : "6rem",
                   fontFamily: "Finlandica",
                   textAlign: "center",
                 }}
@@ -73,7 +73,7 @@ const Hero = () => {
                 style={{
                   color: "#fff",
                   fontFamily: "inter",
-                  fontSize: isSmallScreen ? "2.5rem" : "3.5rem",
+                  fontSize: isSmallScreen ? "1.75rem" : "3.5rem",
                   fontWeight: 200,
                 }}
               />
