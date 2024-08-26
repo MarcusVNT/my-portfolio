@@ -19,7 +19,6 @@ export default function Cards() {
       ))}
       <Typography
         component="div"
-        marginBottom="16px"
         color="#fff"
         textAlign="center"
         alignItems="center"

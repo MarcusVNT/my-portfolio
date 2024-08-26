@@ -13,6 +13,10 @@ const Footer = () => {
     flexDirection: "column",
     marginBottom: "16px",
   }));
+
+  const handleEmailClick = () => {
+    window.location.href = "mailto:marcus-vnt@live.com";
+  };
   return (
     <StyledFooter id="contact-me">
       <Stack>
@@ -33,7 +37,7 @@ const Footer = () => {
         <Button href="https://www.instagram.com/marcusvnt/">
           <InstagramIcon />
         </Button>
-        <Button href="marcus-vnt@live.com">
+        <Button onClick={handleEmailClick}>
           <MailOutlineIcon />
         </Button>
       </Stack>
