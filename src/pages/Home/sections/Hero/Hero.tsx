@@ -53,7 +53,7 @@ const Hero = () => {
                 repeat={Infinity}
                 style={{
                   color: "#fff",
-                  fontSize: isSmallScreen ? "3rem" : "6rem",
+                  fontSize: isSmallScreen ? "2.5rem" : "5rem",
                   fontFamily: "Finlandica",
                   textAlign: "center",
                 }}
@@ -73,7 +73,7 @@ const Hero = () => {
                 style={{
                   color: "#fff",
                   fontFamily: "inter",
-                  fontSize: isSmallScreen ? "1.75rem" : "3.5rem",
+                  fontSize: isSmallScreen ? "1.5rem" : "2.75rem",
                   fontWeight: 200,
                 }}
               />
