@@ -1,7 +1,14 @@
-import { AppBar, MenuItem, Toolbar, styled } from "@mui/material";
+import {
+  AppBar,
+  MenuItem,
+  Toolbar,
+  styled,
+  useMediaQuery,
+} from "@mui/material";
 import { theme } from "../theme";
 
 const Header = () => {
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
   const handleMenuItemClick = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,14 +20,14 @@ const Header = () => {
     display: "flex",
     justifyContent: "end",
     [theme.breakpoints.down("sm")]: {
-      justifyContent: "space-between",
+      justifyContent: "space-around",
     },
   }));
 
   const StyledMenuItem = styled(MenuItem)(({}) => ({
     color: theme.palette.primary.contrastText,
     fontFamily: "Inter",
-    fontSize: "1.25rem",
+    fontSize: isSmallScreen ? "1rem" : "1.25rem",
     fontWeight: 300,
     position: "relative",
 
@@ -35,7 +42,6 @@ const Header = () => {
       transform: "scaleX(0)", // Inicialmente oculta a borda
       transition: "transform 0.3s ease-out", // Adiciona a transição
     },
-
     "&:hover::before": {
       transform: "scaleX(1)", // Mostra a borda durante o hover
     },
@@ -43,7 +49,7 @@ const Header = () => {
 
   return (
     <>
-      <AppBar position="relative">
+      <AppBar position="relative" style={{ zIndex: 10 }}>
         <StyledToolBar>
           <StyledMenuItem onClick={() => handleMenuItemClick("about")}>
             About

@@ -19,17 +19,16 @@ const Hero = () => {
     justifyContent: "center",
   }));
   const StyledImg = styled("img")(({ theme }) => ({
-    width: "75%",
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`,
     [theme.breakpoints.down("md")]: {
-      width: "50%",
-    },
-    [theme.breakpoints.down("sm")]: {
       width: "60%",
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "50%",
+    },
   }));
-  const isSmallScreen = useMediaQuery("(max-width:500px)");
+  const isSmallScreen = useMediaQuery("(max-width:550px)");
 
   return (
     <StyledHero>
@@ -53,7 +52,7 @@ const Hero = () => {
                 repeat={Infinity}
                 style={{
                   color: "#fff",
-                  fontSize: isSmallScreen ? "3rem" : "6rem",
+                  fontSize: isSmallScreen ? "2.5rem" : "5rem",
                   fontFamily: "Finlandica",
                   textAlign: "center",
                 }}
@@ -73,7 +72,7 @@ const Hero = () => {
                 style={{
                   color: "#fff",
                   fontFamily: "inter",
-                  fontSize: isSmallScreen ? "1.75rem" : "3.5rem",
+                  fontSize: isSmallScreen ? "1.5rem" : "2.75rem",
                   fontWeight: 200,
                 }}
               />
