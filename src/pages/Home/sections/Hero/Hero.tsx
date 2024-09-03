@@ -19,17 +19,16 @@ const Hero = () => {
     justifyContent: "center",
   }));
   const StyledImg = styled("img")(({ theme }) => ({
-    width: "75%",
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`,
     [theme.breakpoints.down("md")]: {
-      width: "50%",
-    },
-    [theme.breakpoints.down("sm")]: {
       width: "60%",
     },
+    [theme.breakpoints.down("sm")]: {
+      width: "50%",
+    },
   }));
-  const isSmallScreen = useMediaQuery("(max-width:500px)");
+  const isSmallScreen = useMediaQuery("(max-width:550px)");
 
   return (
     <StyledHero>

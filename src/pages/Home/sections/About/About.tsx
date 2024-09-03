@@ -1,4 +1,11 @@
-import { Grid, Container, Typography, styled, Box } from "@mui/material";
+import {
+  Grid,
+  Container,
+  Typography,
+  styled,
+  Box,
+  useMediaQuery,
+} from "@mui/material";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
@@ -13,7 +20,7 @@ const About = () => {
     "Typescript",
     "React",
     "Material UI",
-    "Tailwind CSS",
+    "Tailwind",
     "Next.JS",
     "Node.JS",
   ];
@@ -28,6 +35,7 @@ const About = () => {
     "Critical Thinking",
     "Professional Ethics",
   ];
+  const isSmallScreen = useMediaQuery("(max-width:500px)");
 
   const StyledAbout = styled("section")(({}) => ({
     backgroundColor: "#ffffff",
@@ -39,12 +47,32 @@ const About = () => {
     },
   }));
 
+  const StyledExEd = styled(Box)(({}) => ({
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    border: "1px solid #f0f0f0",
+    borderRadius: "4px",
+    boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+    padding: "16px",
+    gap: "4px",
+    minWidth: "203px",
+    transition: "transform .3s ease",
+    "&:hover": {
+      transform: "scale(1.1)",
+    },
+    [theme.breakpoints.down("sm")]: {
+      gridTemplateColumns: "repeat(2, 1fr)",
+    },
+  }));
+
   const StyledList = styled(List)(({}) => ({
     display: "grid",
     justifyContent: "center",
     gridTemplateColumns: "repeat(6, 1fr)",
-    gap: "1rem",
-    marginBottom: "2rem",
+    gap: "16px",
+    marginBottom: "32px",
+    fontSize: isSmallScreen ? "0.825rem" : "1rem",
 
     [theme.breakpoints.down("lg")]: {
       gridTemplateColumns: "repeat(4, 1fr)",
@@ -64,8 +92,7 @@ const About = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    padding: ".5rem 1.5rem",
-    width: "10rem",
+    padding: "8px",
     transition: "transform .3s ease",
     "&:hover": {
       transform: "scale(1.1)",
@@ -80,7 +107,8 @@ const About = () => {
           variant="h1"
           fontFamily="Inter"
           textAlign="center"
-          marginBottom="4rem"
+          marginBottom="48px"
+          style={{ fontSize: isSmallScreen ? "2.5rem" : "4rem" }}
         >
           About Me
         </Typography>
@@ -92,23 +120,7 @@ const About = () => {
             mb: "2rem",
           }}
         >
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              border: "1px solid #f0f0f0",
-              borderRadius: "4px",
-              boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-              padding: "1rem",
-              gap: ".25rem",
-              width: "203px",
-              transition: "transform .3s ease",
-              "&:hover": {
-                transform: "scale(1.1)",
-              },
-            }}
-          >
+          <StyledExEd>
             <WorkspacePremiumIcon />
             <Typography variant="h6" fontWeight="bold">
               Experience
@@ -122,24 +134,8 @@ const About = () => {
             <Typography variant="body1" paragraph={true} marginBottom="0">
               2 Years of Improvement
             </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              border: "1px solid #f0f0f0",
-              borderRadius: "4px",
-              boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-              padding: "1rem",
-              gap: ".25rem",
-              width: "205px",
-              transition: "transform .3s ease",
-              "&:hover": {
-                transform: "scale(1.1)",
-              },
-            }}
-          >
+          </StyledExEd>
+          <StyledExEd>
             <SchoolIcon />
             <Typography variant="h6" fontWeight="bold">
               Education
@@ -153,7 +149,7 @@ const About = () => {
             <Typography variant="body1" paragraph={true} marginBottom="0">
               (2022-2026)
             </Typography>
-          </Box>
+          </StyledExEd>
         </Grid>
         <Grid
           sx={{
@@ -177,7 +173,7 @@ const About = () => {
             variant="h2"
             textAlign="center"
             fontFamily="Inter"
-            mb="1.5rem"
+            mb="24px"
           >
             Hard Skills
           </Typography>
