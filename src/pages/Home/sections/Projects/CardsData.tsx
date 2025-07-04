@@ -1,3 +1,4 @@
+import MyWeather from "../../../../../public/weather.png";
 import Dogs from "../../../../../public/dogs.png";
 import AudioNotes from "../../../../../public/audioNotes.png";
 import FancyWatches from "../../../../../public/fancyWatches.png";
@@ -14,9 +15,20 @@ export interface CardInfo {
 
 export const cardsData: CardInfo[] = [
   {
+    title: "My Weather",
+    image: MyWeather,
+    description: `This project is a weather application that I developed to
+    practice my skills in Next.js, ReactJS, TypeScript, Material UI, Rest API
+    and other technologies. We can search for the weather in any
+    city in the world, and it will show us the current weather with some
+    details like temperature, humidity, wind speed and more. The
+    application uses the WeatherAPI to get the weather data.`,
+    link: "https://mv-weather.vercel.app/",
+  },
+  {
     title: "Dogs - Social Media for Pets",
     image: Dogs,
-    description: `This is a project for a social media for pets, where pet owners
+    description: `This project is a social media for pets, where pet owners
     can create a profile for their pets and interact with other pet
     owners. It was developed using ReactJS, JavaScript, Node.js, CSS
     modules and other technologies. It's one of the most complex and
