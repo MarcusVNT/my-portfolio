@@ -1,3 +1,4 @@
+import RDP from "../../../../../public/rainha.png";
 import MyWeather from "../../../../../public/weather.png";
 import Dogs from "../../../../../public/dogs.png";
 import AudioNotes from "../../../../../public/audioNotes.png";
@@ -14,6 +15,13 @@ export interface CardInfo {
 }
 
 export const cardsData: CardInfo[] = [
+  {
+    title: "Rainha das Perigrinações",
+    image: RDP,
+    description: `Rainha das Perigrinações is a project that I developed to be a christian travel agency. I worked on this project as a freelancer, and it was a great opportunity to
+    apply my skills in Next.js, ReactJS, TypeScript, Tailwind CSS, Rest API and other technologies. I learned to work with some tools like Insominia to test the API. I worked on integration with the API, creating the pages, user authetication and implementing the design. The project is a complete travel agency website that allows users to search for trips, book them, and manage their bookings. Unfortunately, I don't have access to the project anymore, but it was a great experience to work on it.`,
+    link: "https://github.com/MarcusVNT",
+  },
   {
     title: "My Weather",
     image: MyWeather,
