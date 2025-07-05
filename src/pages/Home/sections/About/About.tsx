@@ -23,6 +23,14 @@ const About = () => {
     "Tailwind",
     "Next.JS",
     "Node.JS",
+    "Flutter",
+    "Dart",
+    "Git",
+    "GitHub",
+    "REST API",
+    "Figma",
+    "Insomnia",
+    "Styled Components",
   ];
   const softSkillsArray: Array<string> = [
     "Communication",
@@ -34,6 +42,9 @@ const About = () => {
     "Empathy",
     "Critical Thinking",
     "Professional Ethics",
+    "Proactivity",
+    "Organized",
+    "Collaborative Spirit",
   ];
   const isSmallScreen = useMediaQuery("(max-width:500px)");
 
@@ -92,6 +103,7 @@ const About = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    textAlign: "center",
     padding: "8px",
     transition: "transform .3s ease",
     "&:hover": {
@@ -158,14 +170,20 @@ const About = () => {
           }}
         >
           <Typography variant="body1" marginBottom="1rem">
-            I am a software developer with a passion for creating beautiful and
-            functional user interfaces. I have been working as a front-end
-            developer for the past two years and I have been improving my skills
-            ever since. I am currently pursuing a degree in Software Engineering
-            and I am expected to graduate in 2026. I am a quick learner and I
-            love to learn new technologies and frameworks. I am looking forward
-            to working with a team of talented individuals and I am excited to
-            bring my skills and experience to the table.
+            I'm Marcus Vinícius do Nascimento Teixeira, a dedicated Front-End
+            Developer with a passion for crafting engaging and user-friendly web
+            experiences. Currently pursuing a Bachelor's degree in Software
+            Engineering, I bring a solid foundation in JavaScript, TypeScript,
+            and React.js to my projects. I'm adept at building dynamic and
+            responsive user interfaces, prioritizing clean code, accessibility,
+            and maintainability.
+          </Typography>
+          <Typography variant="body1" marginBottom="1rem">
+            My expertise extends to modern CSS frameworks like Tailwind CSS and
+            Material UI, and I leverage Git and GitHub for efficient version
+            control. I'm also familiar with Flutter for mobile development and
+            dedicated to continuous learning and applying best practices to
+            deliver high-quality solutions.
           </Typography>
         </Grid>
         <Grid borderBottom="1px solid #d4d4d4">

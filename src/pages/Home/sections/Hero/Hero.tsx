@@ -6,7 +6,7 @@ import {
   styled,
   useMediaQuery,
 } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.png";
+import Avatar from "../../../../../public/avatar1.png";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground";
 import { TypeAnimation } from "react-type-animation";
 
@@ -21,6 +21,7 @@ const Hero = () => {
   const StyledImg = styled("img")(({ theme }) => ({
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`,
+    width: "100%",
     [theme.breakpoints.down("md")]: {
       width: "60%",
     },
